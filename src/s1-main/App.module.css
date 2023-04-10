@@ -3,9 +3,11 @@
 }
 
 .hw {
-
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .hwTitle {
-
+    font-size: 20px;
+    font-weight: bold;
 }
