@@ -5,9 +5,12 @@
 .hw {
     padding: 20px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .hwTitle {
     font-size: 20px;
     font-weight: bold;
+    padding-right: 20px;
+    margin-left: 10px;
 }
