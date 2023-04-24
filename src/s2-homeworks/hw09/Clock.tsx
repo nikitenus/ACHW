@@ -16,12 +16,12 @@ function Clock() {
             setDate(new Date())
         }, 1000)
         setTimerId(id)
-        setbuttonActivation(false)
+        setbuttonActivation(true)
     }
 
     const stop = () => {
         clearInterval(timerId)
-        setbuttonActivation(true)
+        setbuttonActivation(false)
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
 
     }
@@ -72,14 +72,14 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    disabled={buttonActivation} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={buttonActivation ? true : false} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     start
                 </SuperButton>
                 <SuperButton
                     id={'hw9-button-stop'}
-                    disabled={buttonActivation} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={buttonActivation ? false : true} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     stop
